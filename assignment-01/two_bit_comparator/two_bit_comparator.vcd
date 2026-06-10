@@ -1,0 +1,236 @@
+$date
+	Wed May 27 02:00:59 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module two_bit_comparator_tb $end
+$var wire 1 ! EQ_gl $end
+$var wire 1 " GT_gl $end
+$var wire 1 # LT_gl $end
+$var wire 1 $ LT_df $end
+$var wire 1 % LT_beh $end
+$var wire 1 & GT_df $end
+$var wire 1 ' GT_beh $end
+$var wire 1 ( EQ_df $end
+$var wire 1 ) EQ_beh $end
+$var reg 2 * A [1:0] $end
+$var reg 2 + B [1:0] $end
+$scope module g1 $end
+$var wire 2 , A [1:0] $end
+$var wire 2 - B [1:0] $end
+$var wire 1 ! EQ $end
+$var wire 1 " GT $end
+$var wire 1 # LT $end
+$upscope $end
+$scope module g2 $end
+$var wire 2 . A [1:0] $end
+$var wire 2 / B [1:0] $end
+$var wire 1 ( EQ $end
+$var wire 1 $ LT $end
+$var wire 1 & GT $end
+$upscope $end
+$scope module g3 $end
+$var wire 2 0 A [1:0] $end
+$var wire 2 1 B [1:0] $end
+$var reg 1 ) EQ $end
+$var reg 1 ' GT $end
+$var reg 1 % LT $end
+$upscope $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 2 i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+b0 -
+b0 ,
+b0 +
+b0 *
+1)
+1(
+0'
+0&
+0%
+0$
+0#
+0"
+1!
+$end
+#1000
+0(
+0!
+1#
+1$
+0)
+1%
+b1 +
+b1 -
+b1 /
+b1 1
+b1 2
+#2000
+0!
+1$
+b10 +
+b10 -
+b10 /
+b10 1
+b10 2
+#3000
+1$
+b11 +
+b11 -
+b11 /
+b11 1
+b11 2
+#4000
+1&
+1"
+0#
+0$
+0%
+1'
+b1 *
+b1 ,
+b1 .
+b1 0
+b0 +
+b0 -
+b0 /
+b0 1
+b100 2
+#5000
+1(
+0"
+0&
+1!
+1)
+0'
+b1 +
+b1 -
+b1 /
+b1 1
+b101 2
+#6000
+0(
+0&
+0!
+1#
+1$
+0)
+1%
+b10 +
+b10 -
+b10 /
+b10 1
+b110 2
+#7000
+b11 +
+b11 -
+b11 /
+b11 1
+b111 2
+#8000
+1"
+1&
+0#
+0$
+0%
+1'
+b10 *
+b10 ,
+b10 .
+b10 0
+b0 +
+b0 -
+b0 /
+b0 1
+b1000 2
+#9000
+b1 +
+b1 -
+b1 /
+b1 1
+b1001 2
+#10000
+1(
+0"
+0&
+1!
+1)
+0'
+b10 +
+b10 -
+b10 /
+b10 1
+b1010 2
+#11000
+0(
+0!
+1#
+1$
+0)
+1%
+b11 +
+b11 -
+b11 /
+b11 1
+b1011 2
+#12000
+1&
+1"
+0#
+0$
+0%
+1'
+b11 *
+b11 ,
+b11 .
+b11 0
+b0 +
+b0 -
+b0 /
+b0 1
+b1100 2
+#13000
+1&
+b1 +
+b1 -
+b1 /
+b1 1
+b1101 2
+#14000
+1"
+1&
+b10 +
+b10 -
+b10 /
+b10 1
+b1110 2
+#15000
+1(
+0"
+0&
+1!
+1)
+0'
+b11 +
+b11 -
+b11 /
+b11 1
+b1111 2
+#16000
+b10000 2

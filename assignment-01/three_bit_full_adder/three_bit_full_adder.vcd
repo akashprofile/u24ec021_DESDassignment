@@ -1,0 +1,327 @@
+$date
+	Wed May 27 03:35:19 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module three_bit_full_adder $end
+$var wire 3 ! Sum_st [2:0] $end
+$var wire 3 " Sum_df [2:0] $end
+$var wire 3 # Sum_beh [2:0] $end
+$var wire 1 $ Cout_st $end
+$var wire 1 % Cout_df $end
+$var wire 1 & Cout_beh $end
+$var reg 3 ' A [2:0] $end
+$var reg 3 ( B [2:0] $end
+$var reg 1 ) Cin $end
+$scope module g1 $end
+$var wire 3 * A [2:0] $end
+$var wire 3 + B [2:0] $end
+$var wire 1 ) Cin $end
+$var wire 1 , c2 $end
+$var wire 1 - c1 $end
+$var wire 3 . Sum [2:0] $end
+$var wire 1 % Cout $end
+$upscope $end
+$scope module g2 $end
+$var wire 3 / A [2:0] $end
+$var wire 3 0 B [2:0] $end
+$var wire 1 ) Cin $end
+$var reg 1 & Cout $end
+$var reg 3 1 Sum [2:0] $end
+$upscope $end
+$scope module g3 $end
+$var wire 3 2 A [2:0] $end
+$var wire 3 3 B [2:0] $end
+$var wire 1 ) Cin $end
+$var wire 1 4 w2 $end
+$var wire 1 5 w1 $end
+$var wire 3 6 Sum [2:0] $end
+$var wire 1 $ Cout $end
+$scope module g1 $end
+$var wire 1 5 C $end
+$var wire 1 7 S $end
+$var wire 1 8 x $end
+$var wire 1 9 y $end
+$var wire 1 ) z $end
+$upscope $end
+$scope module g2 $end
+$var wire 1 4 C $end
+$var wire 1 : S $end
+$var wire 1 ; x $end
+$var wire 1 < y $end
+$var wire 1 5 z $end
+$upscope $end
+$scope module g3 $end
+$var wire 1 $ C $end
+$var wire 1 = S $end
+$var wire 1 > x $end
+$var wire 1 ? y $end
+$var wire 1 4 z $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0?
+0>
+0=
+0<
+0;
+0:
+09
+08
+07
+b0 6
+05
+04
+b0 3
+b0 2
+b0 1
+b0 0
+b0 /
+b0 .
+0-
+0,
+b0 +
+b0 *
+0)
+b0 (
+b0 '
+0&
+0%
+0$
+b0 #
+b0 "
+b0 !
+$end
+#1000
+b111 "
+b111 .
+b111 !
+b111 6
+1=
+17
+1:
+1>
+b111 #
+b111 1
+19
+1<
+b100 '
+b100 *
+b100 /
+b100 2
+b11 (
+b11 +
+b11 0
+b11 3
+#2000
+b11 "
+b11 .
+b11 !
+b11 6
+1$
+1%
+0=
+1&
+b11 #
+b11 1
+1?
+b111 (
+b111 +
+b111 0
+b111 3
+#3000
+b111 "
+b111 .
+b111 !
+b111 6
+0$
+0%
+1=
+18
+1;
+0>
+0&
+b111 #
+b111 1
+09
+0<
+b11 '
+b11 *
+b11 /
+b11 2
+b100 (
+b100 +
+b100 0
+b100 3
+#4000
+1>
+0?
+b111 '
+b111 *
+b111 /
+b111 2
+b0 (
+b0 +
+b0 0
+b0 3
+#5000
+1$
+1%
+0=
+14
+1,
+0:
+b0 "
+b0 .
+b0 !
+b0 6
+15
+1-
+07
+1&
+b0 #
+b0 1
+19
+b1 (
+b1 +
+b1 0
+b1 3
+#6000
+b0 "
+b0 .
+b0 !
+b0 6
+09
+07
+b0 (
+b0 +
+b0 0
+b0 3
+1)
+#7000
+08
+19
+b110 '
+b110 *
+b110 /
+b110 2
+b1 (
+b1 +
+b1 0
+b1 3
+#8000
+0;
+1<
+b100 '
+b100 *
+b100 /
+b100 2
+b11 (
+b11 +
+b11 0
+b11 3
+#9000
+0$
+0%
+1=
+b111 "
+b111 .
+b111 !
+b111 6
+04
+17
+0,
+1:
+18
+0>
+0&
+b111 #
+b111 1
+0<
+1?
+b1 '
+b1 *
+b1 /
+b1 2
+b101 (
+b101 +
+b101 0
+b101 3
+#10000
+1$
+1%
+0=
+b0 "
+b0 .
+b0 !
+b0 6
+14
+1,
+07
+0:
+1>
+1&
+b0 #
+b0 1
+09
+1<
+0?
+b101 '
+b101 *
+b101 /
+b101 2
+b10 (
+b10 +
+b10 0
+b10 3
+#11000
+0$
+0%
+1=
+b101 "
+b101 .
+b101 !
+b101 6
+04
+0-
+17
+05
+0,
+0:
+08
+0>
+0&
+b101 #
+b101 1
+0<
+1?
+b0 '
+b0 *
+b0 /
+b0 2
+b100 (
+b100 +
+b100 0
+b100 3
+#12000
+1>
+0?
+b100 '
+b100 *
+b100 /
+b100 2
+b0 (
+b0 +
+b0 0
+b0 3
+#13000

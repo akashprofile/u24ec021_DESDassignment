@@ -1,0 +1,81 @@
+$date
+	Wed May 27 00:37:42 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module xor_gate_tb $end
+$var wire 1 ! Y_gl $end
+$var wire 1 " Y_df $end
+$var wire 1 # Y_beh $end
+$var reg 1 $ A $end
+$var reg 1 % B $end
+$scope module g1 $end
+$var wire 1 $ A $end
+$var wire 1 % B $end
+$var wire 1 ! Y $end
+$var wire 1 & w1 $end
+$var wire 1 ' w2 $end
+$var wire 1 ( w3 $end
+$upscope $end
+$scope module g2 $end
+$var wire 1 $ A $end
+$var wire 1 % B $end
+$var wire 1 " Y $end
+$var wire 1 ) w1 $end
+$var wire 1 * w2 $end
+$var wire 1 + w3 $end
+$upscope $end
+$scope module g3 $end
+$var wire 1 $ A $end
+$var wire 1 % B $end
+$var reg 1 # Y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1+
+1*
+1)
+1(
+1'
+1&
+0%
+0$
+0#
+0"
+0!
+$end
+#1000
+1"
+1!
+0+
+0(
+1#
+1%
+#2000
+1+
+0*
+1(
+0'
+0%
+1$
+#3000
+0"
+1*
+0!
+1'
+0)
+1+
+0&
+1(
+0#
+1%
+#4000

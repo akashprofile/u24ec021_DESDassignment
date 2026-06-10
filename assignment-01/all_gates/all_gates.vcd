@@ -1,0 +1,201 @@
+$date
+	Wed May 27 11:17:28 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module all_gates_tb $end
+$var wire 1 ! y_xor_gl $end
+$var wire 1 " y_xor_df $end
+$var wire 1 # y_xor_beh $end
+$var wire 1 $ y_xnor_gl $end
+$var wire 1 % y_xnor_df $end
+$var wire 1 & y_xnor_beh $end
+$var wire 1 ' y_or_gl $end
+$var wire 1 ( y_or_df $end
+$var wire 1 ) y_or_beh $end
+$var wire 1 * y_not_gl $end
+$var wire 1 + y_not_df $end
+$var wire 1 , y_not_beh $end
+$var wire 1 - y_nor_gl $end
+$var wire 1 . y_nor_df $end
+$var wire 1 / y_nor_beh $end
+$var wire 1 0 y_nand_gl $end
+$var wire 1 1 y_nand_df $end
+$var wire 1 2 y_nand_beh $end
+$var wire 1 3 y_and_gl $end
+$var wire 1 4 y_and_df $end
+$var wire 1 5 y_and_beh $end
+$var reg 1 6 a $end
+$var reg 1 7 b $end
+$scope module u1 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 3 y $end
+$upscope $end
+$scope module u10 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 0 y $end
+$upscope $end
+$scope module u11 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 1 y $end
+$upscope $end
+$scope module u12 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var reg 1 2 y $end
+$upscope $end
+$scope module u13 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 - y $end
+$upscope $end
+$scope module u14 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 . y $end
+$upscope $end
+$scope module u15 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var reg 1 / y $end
+$upscope $end
+$scope module u16 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 ! y $end
+$upscope $end
+$scope module u17 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 " y $end
+$upscope $end
+$scope module u18 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var reg 1 # y $end
+$upscope $end
+$scope module u19 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 $ y $end
+$upscope $end
+$scope module u2 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 4 y $end
+$upscope $end
+$scope module u20 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 % y $end
+$upscope $end
+$scope module u21 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var reg 1 & y $end
+$upscope $end
+$scope module u3 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var reg 1 5 y $end
+$upscope $end
+$scope module u4 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 ' y $end
+$upscope $end
+$scope module u5 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var wire 1 ( y $end
+$upscope $end
+$scope module u6 $end
+$var wire 1 6 a $end
+$var wire 1 7 b $end
+$var reg 1 ) y $end
+$upscope $end
+$scope module u7 $end
+$var wire 1 6 a $end
+$var wire 1 * y $end
+$upscope $end
+$scope module u8 $end
+$var wire 1 6 a $end
+$var wire 1 + y $end
+$upscope $end
+$scope module u9 $end
+$var wire 1 6 a $end
+$var reg 1 , y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+07
+06
+05
+04
+03
+12
+11
+10
+1/
+1.
+1-
+1,
+1+
+1*
+0)
+0(
+0'
+1&
+1%
+1$
+0#
+0"
+0!
+$end
+#1000
+0%
+0.
+1"
+1)
+0/
+1#
+0&
+0-
+1!
+0$
+1'
+1(
+17
+#2000
+0*
+0+
+0,
+07
+16
+#3000
+0"
+01
+1%
+13
+00
+15
+02
+0#
+1&
+0!
+1$
+14
+17
+#4000
