@@ -7,7 +7,24 @@
 5. 8-bit, 16-bit array multiplier
 6. 8-bit, 32-bit Booth's Multiplier using combinational approach
 
-## 4. 8-bit, 16-bit array multiplier
+
+## 1. 8x3 Encoder using functions and tasks
+
+![8x3 Encoder using functions and tasks](./encoder8x3/waveforms.png)
+
+## 2, 16x1 MUX using functions and tasks
+
+![16x1 MUX using functions and tasks](./mux16x1/waveforms.png)
+
+## 3. 3x8 Decoder using functions and tasks
+
+![3x8 Decoder using functions and tasks](./decoder3x8/waveforms.png)
+
+## 4. 1x16 DeMUX using functions and tasks
+
+![1x16 DeMUX using functions and tasks](./demux1x16/waveforms.png)
+
+## 5. 8-bit, 16-bit array multiplier
 
 ```
 >>> Testing 8 bit array multiplier
@@ -29,7 +46,7 @@ M1 = 4294901760   Q1 = 4294901760   R1 = 18446181128051097600   expected = 18446
 >>> 32-bit random tests passed.
 ```
 
-## 5. 8-bit, 32-bit Booth's Multiplier using combinational approach
+## 6. 8-bit, 32-bit Booth's Multiplier using combinational approach
 
 ```
 >>> Testing 8 bit booth multiplier
