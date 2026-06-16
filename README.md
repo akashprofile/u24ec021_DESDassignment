@@ -9,7 +9,7 @@
 5. Create XOR gate using NAND gates only by behavioral, and structural modelling.
 
 
-# Assignment-02
+## Assignment-02
 
 1. Decoder circuits (2x4, 3x8)
 2. Encoder circuits (4x2, 8x3)
@@ -21,7 +21,7 @@
 8. Basic logic gates using 2x1 MUX
 
 
-# Assignment-03
+## Assignment-03
 
 1. 8x3 Encoder using functions and tasks
 2. 16x1 MUX using functions and tasks
@@ -29,3 +29,14 @@
 4. 1x16 DeMUX using functions and tasks
 5. 8-bit, 16-bit array multiplier
 6. 8-bit, 32-bit Booth's Multiplier using combinational approach
+
+## Assignment-04
+
+Implement parameterized Verilog modules for:
+
+* RCA (Ripple Carry Adder)
+* CSKA (Carry Skip Adder)
+* CSA (Carry Select Adder)
+* CLA (Carry Look-Ahead Adder)
+
+Test all designs for N = 16 bits and verify their functionality using a testbench.

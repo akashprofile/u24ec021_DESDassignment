@@ -1,0 +1,110 @@
+# Assignments
+
+Implement parameterized Verilog modules for:
+
+* RCA (Ripple Carry Adder)
+* CSKA (Carry Skip Adder)
+* CSA (Carry Select Adder)
+* CLA (Carry Look-Ahead Adder)
+
+Test all designs for N = 16 bits and verify their functionality using a testbench.
+
+## RCA (Ripple Carry Adder)
+
+```
+a = 0011010100100100  b = 0101111010000001  cin = 1    sum = 1001001110100110  cout = 0
+Expected: sum = 1001001110100110  cout = 0
+
+a = 0101011001100011  b = 0111101100001101  cin = 1    sum = 1101000101110001  cout = 0
+Expected: sum = 1101000101110001  cout = 0
+
+a = 1000010001100101  b = 0101001000010010  cin = 1    sum = 1101011001111000  cout = 0
+Expected: sum = 1101011001111000  cout = 0
+
+a = 1100110100001101  b = 1111000101110110  cin = 1    sum = 1011111010000100  cout = 1
+Expected: sum = 1011111010000100  cout = 1
+
+a = 0101011111101101  b = 1111011110001100  cin = 1    sum = 0100111101111010  cout = 1
+Expected: sum = 0100111101111010  cout = 1
+
+a = 0010010011000110  b = 1000010011000101  cin = 0    sum = 1010100110001011  cout = 0
+Expected: sum = 1010100110001011  cout = 0
+
+a = 1111011111100101  b = 0111001001110111  cin = 0    sum = 0110101001011100  cout = 1
+Expected: sum = 0110101001011100  cout = 1
+```
+
+## CSA (Carry Select Adder)
+
+```
+a = 0001110000000000  b = 1111110001110001  cin = 0    sum = 0001100001110001  cout = 1
+Expected: sum = 0001100001110001  cout = 1
+
+a = 1101111100110001  b = 0000001101000000  cin = 0    sum = 1110001001110001  cout = 0
+Expected: sum = 1110001001110001  cout = 0
+
+a = 1100000111000100  b = 1001100100100001  cin = 1    sum = 0101101011100110  cout = 1
+Expected: sum = 0101101011100110  cout = 1
+
+a = 0010101011111010  b = 1000001000101111  cin = 0    sum = 1010110100101001  cout = 0
+Expected: sum = 1010110100101001  cout = 0
+
+a = 0001100001110010  b = 1001010000001101  cin = 1    sum = 1010110010000000  cout = 0
+Expected: sum = 1010110010000000  cout = 0
+
+a = 0001001011000101  b = 1000010101001100  cin = 1    sum = 1001100000010010  cout = 0
+Expected: sum = 1001100000010010  cout = 0
+
+a = 1111010111101001  b = 0110101001010110  cin = 0    sum = 0110000000111111  cout = 1
+Expected: sum = 0110000000111111  cout = 1
+```
+
+## CLA (Carry Look-Ahead Adder)
+
+```
+a = 0000111000000000  b = 1000010000111000  cin = 0    sum = 1001001000111000  cout = 0
+Expected: sum = 1001001000111000  cout = 0
+
+a = 0000110001011100  b = 0000011111001110  cin = 1    sum = 0001010000101011  cout = 0
+Expected: sum = 0001010000101011  cout = 0
+
+a = 0010110011000110  b = 0110001011110011  cin = 1    sum = 1000111110111010  cout = 0
+Expected: sum = 1000111110111010  cout = 0
+
+a = 0100100001011111  b = 0110010101000111  cin = 1    sum = 1010110110100111  cout = 0
+Expected: sum = 1010110110100111  cout = 0
+
+a = 1001110001111110  b = 0001100001000101  cin = 1    sum = 1011010011000100  cout = 0
+Expected: sum = 1011010011000100  cout = 0
+
+a = 0010000110010001  b = 1101001101101110  cin = 1    sum = 1111010100000000  cout = 0
+Expected: sum = 1111010100000000  cout = 0
+
+a = 1001110100111100  b = 0000001011001001  cin = 1    sum = 1010000000000110  cout = 0
+Expected: sum = 1010000000000110  cout = 0
+```
+
+## CSKA (Carry Skip Adder)
+
+```
+a = 0010101000000000  b = 0111001010101010  cin = 0    sum = 1001110010101010  cout = 0
+Expected: sum = 1001110010101010  cout = 0
+
+a = 1011000000000111  b = 1111110010110010  cin = 0    sum = 1010110010111001  cout = 1
+Expected: sum = 1010110010111001  cout = 1
+
+a = 0101011011000011  b = 1100111101001110  cin = 1    sum = 0010011000010010  cout = 1
+Expected: sum = 0010011000010010  cout = 1
+
+a = 0000101110010101  b = 1001111100010110  cin = 1    sum = 1010101010101100  cout = 0
+Expected: sum = 1010101010101100  cout = 0
+
+a = 1001011001100111  b = 0001001111010100  cin = 1    sum = 1010101000111100  cout = 0
+Expected: sum = 1010101000111100  cout = 0
+
+a = 0000001111111001  b = 0011010100101001  cin = 1    sum = 0011100100100011  cout = 0
+Expected: sum = 0011100100100011  cout = 0
+
+a = 0100111010010111  b = 1101000111100100  cin = 1    sum = 0010000001111100  cout = 1
+Expected: sum = 0010000001111100  cout = 1
+```
