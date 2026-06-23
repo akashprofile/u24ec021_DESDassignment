@@ -1,0 +1,116 @@
+$date
+	Tue Jun 23 12:22:52 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module sync_up_down_counter_tb $end
+$var wire 2 ! value [1:0] $end
+$var reg 1 " clk $end
+$var reg 1 # countDown $end
+$var reg 1 $ reset $end
+$scope module u $end
+$var wire 1 " clk $end
+$var wire 1 # countDown $end
+$var wire 1 $ reset $end
+$var parameter 32 % N $end
+$var reg 2 & value [1:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b10 %
+$end
+#0
+$dumpvars
+b0 &
+0$
+0#
+0"
+b0 !
+$end
+#10
+1"
+#12
+1$
+#20
+0"
+#30
+b1 !
+b1 &
+1"
+#40
+0"
+#50
+b10 !
+b10 &
+1"
+#60
+0"
+#70
+b11 !
+b11 &
+1"
+#80
+0"
+#90
+b0 !
+b0 &
+1"
+#100
+0"
+#110
+b1 !
+b1 &
+1"
+#112
+1#
+#120
+0"
+#130
+b0 !
+b0 &
+1"
+#140
+0"
+#150
+b11 !
+b11 &
+1"
+#160
+0"
+#170
+b10 !
+b10 &
+1"
+#180
+0"
+#190
+b1 !
+b1 &
+1"
+#200
+0"
+#210
+b0 !
+b0 &
+1"
+#212
+0#
+#220
+0"
+#230
+b1 !
+b1 &
+1"
+#240
+0"
+#250
+b10 !
+b10 &
+1"
+#252
