@@ -1,0 +1,149 @@
+$date
+	Thu Jun 25 19:24:07 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module sipo_reg_tb $end
+$var wire 4 ! d_out [3:0] $end
+$var reg 1 " clk $end
+$var reg 1 # d_in $end
+$var reg 4 $ data_in [3:0] $end
+$var reg 1 % en $end
+$var reg 1 & rst $end
+$scope module dut $end
+$var wire 1 " clk $end
+$var wire 1 # d_in $end
+$var wire 4 ' d_out [3:0] $end
+$var wire 1 % en $end
+$var wire 1 & rst $end
+$var parameter 32 ( N $end
+$var reg 4 ) data [3:0] $end
+$upscope $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 * i [31:0] $end
+$upscope $end
+$scope begin $ivl_for_loop1 $end
+$var integer 32 + i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 (
+$end
+#0
+$dumpvars
+bx +
+bx *
+b0 )
+b0 '
+0&
+1%
+b1001 $
+x#
+0"
+b0 !
+$end
+#10
+1&
+#40
+1#
+b11 *
+#50
+b1 !
+b1 '
+b1 )
+1"
+#100
+0"
+#140
+0#
+b10 *
+#150
+b10 !
+b10 '
+b10 )
+1"
+#200
+0"
+#240
+b1 *
+#250
+b100 !
+b100 '
+b100 )
+1"
+#300
+0"
+#340
+1#
+b0 *
+#350
+b1001 !
+b1001 '
+b1001 )
+1"
+#400
+0"
+#440
+0%
+b11111111111111111111111111111111 *
+#450
+1"
+#500
+0"
+#550
+1"
+#600
+0"
+#640
+b11 +
+b1110 $
+1%
+#650
+b11 !
+b11 '
+b11 )
+1"
+#700
+0"
+#740
+b10 +
+#750
+b111 !
+b111 '
+b111 )
+1"
+#800
+0"
+#840
+b1 +
+#850
+b1111 !
+b1111 '
+b1111 )
+1"
+#900
+0"
+#940
+0#
+b0 +
+#950
+b1110 !
+b1110 '
+b1110 )
+1"
+#1000
+0"
+#1040
+0%
+b11111111111111111111111111111111 +
+#1050
+1"
+#1100
+0"
+#1140
