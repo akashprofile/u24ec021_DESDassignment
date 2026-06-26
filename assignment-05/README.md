@@ -102,3 +102,79 @@ VCD info: dumpfile traces.vcd opened for output.
 #  106 >>  en = 0  rst = 1  d_in = 0  d_out = 1110  data_in = 1110
 tb.v:41: $finish called at 1140 (100ps)
 ```
+
+## 8. Bidirectional Shift Register
+
+![Bidirectional Shift Register](./bidirectional-shift-register/waveforms.png)
+
+```
+VCD info: dumpfile traces.vcd opened for output.
+#  0  >>  data_stored: 0000
+#  0  >>  data_stored: 0000
+# 10  >>  rst = 1  en = 1  shiftRight = 0  d_in = 0  d_out_left = 0  d_out_right = 0  data_in = 1010
+#  0  >>  data_stored: 0001
+# 20  >>  rst = 1  en = 1  shiftRight = 0  d_in = 1  d_out_left = 0  d_out_right = 1  data_in = 1010
+#  0  >>  data_stored: 0010
+# 30  >>  rst = 1  en = 1  shiftRight = 0  d_in = 0  d_out_left = 0  d_out_right = 0  data_in = 1010
+#  0  >>  data_stored: 0101
+# 40  >>  rst = 1  en = 1  shiftRight = 0  d_in = 1  d_out_left = 0  d_out_right = 1  data_in = 1010
+#  0  >>  data_stored: 0101
+# 50  >>  rst = 1  en = 0  shiftRight = 0  d_in = 1  d_out_left = 0  d_out_right = 1  data_in = 1010
+#  0  >>  data_stored: 0101
+# 60  >>  rst = 1  en = 0  shiftRight = 0  d_in = 1  d_out_left = 0  d_out_right = 1  data_in = 1010
+#  0  >>  data_stored: 1010
+# 70  >>  rst = 1  en = 1  shiftRight = 1  d_in = 1  d_out_left = 1  d_out_right = 0  data_in = 0101
+#  0  >>  data_stored: 0101
+# 80  >>  rst = 1  en = 1  shiftRight = 1  d_in = 0  d_out_left = 0  d_out_right = 1  data_in = 0101
+#  0  >>  data_stored: 1010
+# 90  >>  rst = 1  en = 1  shiftRight = 1  d_in = 1  d_out_left = 1  d_out_right = 0  data_in = 0101
+#  0  >>  data_stored: 0101
+#100  >>  rst = 1  en = 1  shiftRight = 1  d_in = 0  d_out_left = 0  d_out_right = 1  data_in = 0101
+tb.v:46: $finish called at 1030 (100ps)
+```
+
+## 9. Custom Sequence Counter (1, 32, 62, 128)
+
+![Custom Sequence Counter (1, 32, 62, 128)](./custom-sequence-counter/waveforms.png)
+
+```
+VCD info: dumpfile traces.vcd opened for output.
+#  1  >> count =   1
+# 11  >> count =  32
+# 21  >> count =  62
+# 31  >> count = 128
+# 41  >> count =   1
+# 51  >> count =  32
+# 61  >> count =  62
+# 71  >> count = 128
+# 81  >> count =   1
+# 91  >> count =  32
+tb.v:28: $finish called at 1010 (100ps)
+```
+
+## 10. BCD Counter
+
+![BCD Counter](./bcd-counter/waveforms.png)
+
+```
+VCD info: dumpfile traces.vcd opened for output.
+#  1 count  =>    0000  _2    0  _10
+# 11 count  =>    0001  _2    1  _10
+# 21 count  =>    0010  _2    2  _10
+# 31 count  =>    0011  _2    3  _10
+# 41 count  =>    0100  _2    4  _10
+# 51 count  =>    0101  _2    5  _10
+# 61 count  =>    0110  _2    6  _10
+# 71 count  =>    0111  _2    7  _10
+# 81 count  =>    1000  _2    8  _10
+# 91 count  =>    1001  _2    9  _10
+#101 count  =>    0000  _2    0  _10
+#111 count  =>    0001  _2    1  _10
+#121 count  =>    0010  _2    2  _10
+#131 count  =>    0011  _2    3  _10
+#141 count  =>    0100  _2    4  _10
+#151 count  =>    0101  _2    5  _10
+tb.v:26: $finish called at 1610 (100ps)
+```
+
+

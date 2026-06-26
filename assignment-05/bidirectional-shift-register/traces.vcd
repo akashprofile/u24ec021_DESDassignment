@@ -1,0 +1,148 @@
+$date
+	Fri Jun 26 11:38:03 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	100ps
+$end
+$scope module bidirectional_shift_register_tb $end
+$var wire 1 ! d_out_right $end
+$var wire 1 " d_out_left $end
+$var reg 1 # clk $end
+$var reg 1 $ d_in $end
+$var reg 4 % data_in [3:0] $end
+$var reg 1 & en $end
+$var reg 1 ' rst $end
+$var reg 1 ( shiftRight $end
+$scope module dut $end
+$var wire 1 # clk $end
+$var wire 1 $ d_in $end
+$var wire 1 & en $end
+$var wire 1 ' rst $end
+$var wire 1 ( shiftRight $end
+$var wire 1 ! d_out_right $end
+$var wire 1 " d_out_left $end
+$var parameter 32 ) N $end
+$var reg 4 * data_stored [3:0] $end
+$upscope $end
+$scope begin $ivl_for_loop0 $end
+$var integer 32 + i [31:0] $end
+$upscope $end
+$scope begin $ivl_for_loop1 $end
+$var integer 32 , i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100 )
+$end
+#0
+$dumpvars
+bx ,
+bx +
+b0 *
+0(
+0'
+0&
+b0 %
+x$
+0#
+0"
+0!
+$end
+#10
+1'
+1&
+b1010 %
+#30
+0$
+b0 +
+#50
+1#
+#100
+0#
+#130
+1$
+b1 +
+#150
+1!
+b1 *
+1#
+#200
+0#
+#230
+0$
+b10 +
+#250
+0!
+b10 *
+1#
+#300
+0#
+#330
+1$
+b11 +
+#350
+1!
+b101 *
+1#
+#400
+0#
+#430
+0&
+b100 +
+#450
+1#
+#500
+0#
+#550
+1#
+#600
+0#
+#630
+b0 ,
+b101 %
+1&
+1(
+#650
+1"
+0!
+b1010 *
+1#
+#700
+0#
+#730
+0$
+b1 ,
+#750
+0"
+1!
+b101 *
+1#
+#800
+0#
+#830
+1$
+b10 ,
+#850
+1"
+0!
+b1010 *
+1#
+#900
+0#
+#930
+0$
+b11 ,
+#950
+0"
+1!
+b101 *
+1#
+#1000
+0#
+#1030
+b100 ,
