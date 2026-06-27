@@ -177,4 +177,19 @@ VCD info: dumpfile traces.vcd opened for output.
 tb.v:26: $finish called at 1610 (100ps)
 ```
 
+## 11. Button debounder (button should be pressed for 10ms at 100 Mhz clock to register)
 
+![Button debounder (button should be pressed for 10ms at 100 Mhz clock to register)](./button-debouncer/waveforms.png)
+
+```
+VCD info: dumpfile traces.vcd opened for output.
+#          0    btnPressed = 0   btnRegister = x   //start
+#    2500000    btnPressed = 1   btnRegister = 0   //1.
+#    5000000    btnPressed = 0   btnRegister = 0   //2.
+#    7500000    btnPressed = 1   btnRegister = 0   //3.
+#   17500000    btnPressed = 0   btnRegister = 1   //4.
+#   20000000    btnPressed = 1   btnRegister = 0   //5.
+#   35000000    btnPressed = 0   btnRegister = 1   //6.
+#   37500000    btnPressed = 0   btnRegister = 0   //end
+tb.v:52: $finish called at 37500000 (1ns)
+```
