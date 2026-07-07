@@ -35,7 +35,15 @@ tb.v:34: $finish called at 1080 (100ps)
 
 ## 2. Design FSM for a pattern matching block: Output is asserted 1 if pattern `101` is detected in the last 4 inputs.
 
-Not completed
+![Design FSM for a pattern matching block `101`](./fsm-detect-101-in-last-4-samples/waveforms.png)
+
+```
+VCD info: dumpfile traces.vcd opened for output.
+seq_in      :  0101001101010
+out_actual  :  0001100001111
+out_expected:  0001100001111
+tb.v:34: $finish called at 1380 (100ps)
+```
 
 ## 3. Design an FSM which gives o/p 1 if alternate 1's & 0's zre present int last 3 samples else 0
 

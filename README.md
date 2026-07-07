@@ -54,3 +54,26 @@ Test all designs for N = 16 bits and verify their functionality using a testbenc
 9. Counter which counts the sequence 1, 32, 62, 128 structural modelling only (using basic gates, no behavioral code)
 10. BCD Counter with structural modelling (no behavioral code)
 11. Button debounder (button should be pressed for 10ms at 100 Mhz clock to register)
+
+## Assignment-06
+
+1. Design a FSM to detect more than one 1s in the last 3 samples
+```
+i/p: 0 1 0 1 0 1 1 0 0 1
+o/p: 0 0 0 1 0 1 1 1 0 0  
+```
+2. Design FSM for a pattern matching block: Output is asserted 1 if pattern `101` is detected in the last 4 inputs.
+```
+i/p: 0 1 0 0 1 0 0 1 1 0 1 0 1 0
+o/p: 0 0 0 1 1 0 0 0 0 0 1 1 1 1
+```
+3. Design an FSM which gives o/p 1 if alternate 1's & 0's zre present int last 3 samples else 0
+```
+i/p: 0 0 1 0 1 0 1 1 0 1 0 0 0
+o/p: 0 0 0 1 1 1 1 0 0 1 1 0 0
+```
+4. It is required to eliminate short length pulses from a sampled data. It means 0's in continuous 1's have to be made 1 & similarly 1's in 0's are to made 0's as shown in the following eample. Give the FSM for the same.
+```
+i/p: 0 1 0 0 1 1 0 1 1 0 0
+o/p: 0 0 0 0 0 1 1 1 1 1 0
+```
