@@ -1,5 +1,3 @@
-`timescale 1ns/100ps
-
 /** Instruction Format
  * zzzzx mmmm nnnn iiiiiiii
  * zzzzx    -> opcode 5-bits
@@ -15,17 +13,15 @@ module ALU (
   output reg [31:0] result                //result of the operation
 );
   //opcodes
-  localparam IDLE     = 5'b0_0000;
-  localparam ADD      = 5'b0_0001, ADDI     = 5'b1_0001;
-  localparam SUB      = 5'b0_0010, SUBI     = 5'b1_0010;
-  localparam AND      = 5'b0_0011, ANDI     = 5'b1_0011;
-  localparam OR       = 5'b0_0100, ORI      = 5'b1_0100;
-  localparam XOR      = 5'b0_0101, XORI     = 5'b1_0101;
-  localparam LSHIFT   = 5'b0_0110, LSHIFTI  = 5'b1_0110;
-  localparam RSHIFT   = 5'b0_0111, RSHIFTI  = 5'b1_0111;
-  localparam ARSHIFT  = 5'b0_1000, ARSHIFTI = 5'b1_1000;
-  localparam NEG      = 5'b0_1001;
-  
+  localparam ADD     = 5'b0_0001, ADDI     = 5'b1_0001;
+  localparam SUB     = 5'b0_0010, SUBI     = 5'b1_0010;
+  localparam AND     = 5'b0_0011, ANDI     = 5'b1_0011;
+  localparam OR      = 5'b0_0100, ORI      = 5'b1_0100;
+  localparam XOR     = 5'b0_0101, XORI     = 5'b1_0101;
+  localparam LSHIFT  = 5'b0_0110, LSHIFTI  = 5'b1_0110;
+  localparam RSHIFT  = 5'b0_0111, RSHIFTI  = 5'b1_0111;
+  localparam ARSHIFT = 5'b0_1000, ARSHIFTI = 5'b1_1000;
+  localparam NEG     = 5'b0_1001, IDLE     = 5'b0_0000;
 
   //extracting useful parts from instruction
   wire [4:0] opcode;
@@ -86,7 +82,7 @@ module ALU (
         ARSHIFTI:
           result <= $signed(sr1_val) >>> zimm8;
         NEG:
-          result <= -$signed(sr1_val);
+          result <= ~sr1_val + 1'b1;
         default:
           result <= 32'h0000_0000;
       endcase
